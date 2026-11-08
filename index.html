@@ -53,6 +53,7 @@
   --accent:    #3c6e63;
   --accent-2:  #a98f4b;
   --accent-soft: rgba(60,110,99,0.12);
+  --glass: rgba(255,255,255,0.6);
 
   --display: "GenSenRounded TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
   --body: "GenSenRounded TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
@@ -72,6 +73,7 @@
     --accent:    #6fb3a3;
     --accent-2:  #d1b872;
     --accent-soft: rgba(111,179,163,0.16);
+    --glass: var(--surface);
   }
 }
 :root[data-theme="dark"]{
@@ -85,6 +87,7 @@
   --accent:    #6fb3a3;
   --accent-2:  #d1b872;
   --accent-soft: rgba(111,179,163,0.16);
+  --glass: var(--surface);
 }
 
 *{box-sizing:border-box;}
@@ -133,7 +136,7 @@ body{
   padding:40px 28px 32px;
   border-radius:28px;
   color:var(--ink);
-  background:rgba(255,255,255,0.6);
+  background:var(--glass);
   border:1px solid var(--line);
   box-shadow:0 30px 70px -36px rgba(33,31,28,0.18);
 }
@@ -154,7 +157,7 @@ body{
 }
 .quiz-card{
   display:flex; align-items:center; gap:16px;
-  background:rgba(255,255,255,0.6);
+  background:var(--glass);
   border:1px solid var(--line);
   border-radius:22px;
   padding:18px 20px;
